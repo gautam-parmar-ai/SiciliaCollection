@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+select,
+input,
+textarea {
+  border: 1px solid orange;
+  outline-color: rgb(186, 121, 0);
+  border-radius: 4px;
+}
+
+.active {
+  background-color: rgb(255, 206, 114);
+  border-color: rgb(210, 142, 17);
+}
