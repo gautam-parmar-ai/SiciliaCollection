@@ -4,13 +4,14 @@ A full-stack ecommerce web application built with the MERN stack, featuring a cu
 
 ## Live Demo
 
-- **Frontend:** [sicilia-collection.vercel.app](https://sicilia-collection-backend.vercel.app)
+- **Frontend:** [sicilia-collection.vercel.app](https://sicilia-collection.vercel.app)
 
 ---
 
 ## Features
 
 ### Customer Storefront
+
 - Browse and filter products by category and subcategory
 - Product detail pages with image gallery and size selection
 - Shopping cart with quantity management
@@ -20,6 +21,7 @@ A full-stack ecommerce web application built with the MERN stack, featuring a cu
 - Order history page
 
 ### Admin Dashboard
+
 - Add new products with image uploads
 - View and manage all product listings
 - View and manage all orders
@@ -30,6 +32,7 @@ A full-stack ecommerce web application built with the MERN stack, featuring a cu
 ## Tech Stack
 
 **Frontend & Admin**
+
 - React.js
 - React Router DOM
 - Tailwind CSS
@@ -38,6 +41,7 @@ A full-stack ecommerce web application built with the MERN stack, featuring a cu
 - Vite
 
 **Backend**
+
 - Node.js
 - Express.js
 - MongoDB (Atlas)
@@ -65,6 +69,7 @@ SiciliaCollection/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js
 - MongoDB Atlas account
 - Stripe account
@@ -74,12 +79,14 @@ SiciliaCollection/
 ### Installation
 
 **1. Clone the repository**
+
 ```bash
 git clone https://github.com/gautam-parmar-ai/SiciliaCollection.git
 cd SiciliaCollection
 ```
 
 **2. Install dependencies for each app**
+
 ```bash
 # Backend
 cd Backend && npm install
@@ -94,6 +101,7 @@ cd ../admin && npm install
 **3. Set up environment variables**
 
 Create a `.env` file in the `Backend` folder:
+
 ```env
 MONGODB_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret
@@ -108,17 +116,20 @@ ADMIN_PASSWORD=your_admin_password
 ```
 
 Create a `.env` file in the `frontend` folder:
+
 ```env
 VITE_BACKEND_URL=http://localhost:4000
 VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
 ```
 
 Create a `.env` file in the `admin` folder:
+
 ```env
 VITE_BACKEND_URL=http://localhost:4000
 ```
 
 **4. Run the apps**
+
 ```bash
 # Backend (from /Backend)
 npm run server
@@ -134,30 +145,31 @@ npm run dev
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /api/user/register | Register a new user |
-| POST | /api/user/login | Login user |
-| GET | /api/product/list | Get all products |
-| POST | /api/product/add | Add a product (admin) |
-| POST | /api/product/remove | Remove a product (admin) |
-| POST | /api/cart/add | Add item to cart |
-| POST | /api/cart/update | Update cart item |
-| POST | /api/cart/get | Get user cart |
-| POST | /api/order/place | Place COD order |
-| POST | /api/order/stripe | Place Stripe order |
-| POST | /api/order/razorpay | Place Razorpay order |
-| POST | /api/order/verifyStripe | Verify Stripe payment |
-| POST | /api/order/verifyRazorpay | Verify Razorpay payment |
-| POST | /api/order/userorders | Get user orders |
-| POST | /api/order/list | Get all orders (admin) |
-| POST | /api/order/status | Update order status (admin) |
+| Method | Endpoint                  | Description                 |
+| ------ | ------------------------- | --------------------------- |
+| POST   | /api/user/register        | Register a new user         |
+| POST   | /api/user/login           | Login user                  |
+| GET    | /api/product/list         | Get all products            |
+| POST   | /api/product/add          | Add a product (admin)       |
+| POST   | /api/product/remove       | Remove a product (admin)    |
+| POST   | /api/cart/add             | Add item to cart            |
+| POST   | /api/cart/update          | Update cart item            |
+| POST   | /api/cart/get             | Get user cart               |
+| POST   | /api/order/place          | Place COD order             |
+| POST   | /api/order/stripe         | Place Stripe order          |
+| POST   | /api/order/razorpay       | Place Razorpay order        |
+| POST   | /api/order/verifyStripe   | Verify Stripe payment       |
+| POST   | /api/order/verifyRazorpay | Verify Razorpay payment     |
+| POST   | /api/order/userorders     | Get user orders             |
+| POST   | /api/order/list           | Get all orders (admin)      |
+| POST   | /api/order/status         | Update order status (admin) |
 
 ---
 
 ## Deployment
 
 This project is deployed on **Vercel**. Make sure to:
+
 1. Add all environment variables in Vercel project settings
 2. Set MongoDB Atlas Network Access to allow all IPs (`0.0.0.0/0`)
 
@@ -166,4 +178,5 @@ This project is deployed on **Vercel**. Make sure to:
 ## Author
 
 **Gautam Parmar**
+
 - GitHub: [@gautam-parmar-ai](https://github.com/gautam-parmar-ai)
